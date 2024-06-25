@@ -1,17 +1,17 @@
 window.addEventListener('DOMContentLoaded', main())
-const users = [
-  {
-    nameUser: 'Juan',
-    userlastname: 'Perez',
-    email: 'juan.sgam@gmail.com',
-    workingRange: 'Medico',
-    password: 'Francisco10*'
-  }
-]
 
 function main () {
   const INPUT_PASSWORD = document.querySelector('#password')
   const BTN_SUBMIT = document.querySelector('.btn--login')
+  const users = [
+    {
+      nameUser: 'Juan',
+      userlastname: 'Perez',
+      email: 'juan.sgam@gmail.com',
+      workingRange: 'Medico',
+      password: 'Francisco10*'
+    }
+  ]
 
   localStorage.setItem('users', JSON.stringify(users[0]))
 
