@@ -1,0 +1,158 @@
+*, ::after, ::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body { 
+  background: linear-gradient(
+    0deg,
+    #9561ee,
+    #1db6ef
+  );
+  color: white;
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.122);
+  border-radius: .8rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 6px 8px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.btn {
+  border-radius: .8rem;
+  padding: .5rem .7rem;
+  border: .1rem solid white;
+  font-size: 1.4rem;
+  background-color: lightgray;
+  background: linear-gradient(
+    90deg,
+    #9561ee,
+    #1db6ef
+  );
+  color: white;
+  box-shadow: 5px 7px 5px rgba(0, 0, 0, 0.1);
+}
+
+.inactive {
+  opacity: .5;
+  pointer-events: none;
+}
+
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.navbar__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+}
+
+.navbar__logo {
+  font-size: 3.5rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  width: min-content;
+  line-height: 0;
+  padding-top: 1.7rem;
+}
+
+.btn--darkmode {
+  padding: .7rem 1rem;
+}
+
+.main {
+  width: 100%;
+  height: 100dvh;
+}
+
+.main__content {
+  width: 100%;
+  max-width: 320px;
+  min-height: 100dvh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.form {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+  padding: 2.5rem 2.5rem;
+}
+
+.form-group {
+  grid-column: 1 / 13;
+}
+
+.form-label {
+  display: block;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: .8rem .7rem;
+  border-radius: .8rem;
+  border: .1rem solid white;
+}
+
+.btn-adapter {
+  grid-column: 1/13;
+}
+
+.bannerLogIn {
+  font-size: 1.5rem;
+  padding: 3rem;
+}
+
+.bannerLogIn__title {
+  text-align: center;
+}
+
+.bannerLogIn__content {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+.bannerLogIn__items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: .1rem solid white;
+  width: 70px;
+  padding: 1rem 0;
+  border-radius: .6rem;
+}
+
+.bannerLogIn__text {
+  display: block;
+  padding: 0 1rem;
+  font-size: 1.8rem;
+}

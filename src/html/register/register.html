@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register SGAM</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="../../../main.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar__content">
+
+    <button class="btn btn--darkmode">
+      <i class="fa-regular fa-moon"></i>
+    </button>
+    </div>
+  </nav>
+
+  <main class="main">
+    <section class="main__content">
+      <h1 style="font-size: 4.5rem; text-align: center;">SGAM</h1>
+      <form class="form glass-effect" id="register-form">
+        <div class="form-group">
+          <label for="username" class="form-label">Nombre:</label>
+          <input
+            type="text"
+            name="nameUser"
+            id="username"
+            class="form-control"
+            placeholder="Juan"
+            >
+        </div>
+        <div class="form-group">
+          <label for="userlastname" class="form-label">Apellido:</label>
+          <input type="text" name="userlastname" id="userlastname" class="form-control" placeholder="Herrera">
+        </div>
+        <div class="form-group">
+          <label for="email" class="form-label">Email:</label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="examples.sga@example.com"
+            class="form-control"
+            >
+        </div>
+        <div class="form-group">
+          <label for="password" class="form-label">password:</label>
+          <input
+            type="password"
+            name="passwordUser"
+            id="password"
+            class="form-control"
+            autocomplete="on"
+            placeholder="******"
+            >
+        </div>
+        <div class="form-group">
+          <label for="workingRange" class="form-label">Puesto de trabajo</label>
+          <input type="text" name="workingRange" id="workingRange" class="form-control" placeholder="Doctor, recepsionista, etc...">
+        </div>
+
+        <button type="submit" class="btn btn--login btn-adapter" id="btnSubmit" style="margin: 2rem 0;">
+          sign up
+        </button>
+      </form>
+      <div class="bannerLogIn glass-effect">
+
+        <p class="bannerLogIn__title">
+          Tienes una ceunta <a href="../../../index.html">log in </a> <br> o crea una cuenta con: 
+        </p>
+
+        <div class="bannerLogIn__content">
+          <div class="bannerLogIn__items">
+            <h5 class="bannerLogIn__text">
+              <i class="fa-brands fa-google"></i>
+            </h5>
+            <p>Google</p>
+          </div>
+          <div class="bannerLogIn__items">
+            <h5 class="bannerLogIn__text">
+              <i class="fa-brands fa-instagram"></i>
+            </h5>
+            <p>Instagram</p>
+          </div>
+          <div class="bannerLogIn__items">
+            <h5 class="bannerLogIn__text">
+              <i class="fa-brands fa-facebook-f"></i>
+            </h5>
+            <p>Facebook</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+
+
+  <script src="./register.js"></script>
+</body>
+</html>
