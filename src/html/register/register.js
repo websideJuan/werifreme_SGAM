@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', () => main())
 
 function main () {
-  const form = document.getElementById('register-form')
+  const form = document.getElementById('register-form')  
   form.addEventListener('submit', (event) => {
     event.preventDefault()
     const formData = new FormData(form)

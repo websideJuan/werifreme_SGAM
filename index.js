@@ -1,9 +1,19 @@
 window.addEventListener('DOMContentLoaded', main())
+const users = [
+  {
+    nameUser: 'Juan',
+    userlastname: 'Perez',
+    email: 'juan.sgam@gmail.com',
+    workingRange: 'Medico',
+    password: 'Francisco10*'
+  }
+]
 
 function main () {
   const INPUT_PASSWORD = document.querySelector('#password')
-  const INPUT_USERNAME = document.querySelector('#username')
   const BTN_SUBMIT = document.querySelector('.btn--login')
+
+  localStorage.setItem('users', JSON.stringify(users[0]))
 
 
   INPUT_PASSWORD.addEventListener('input', e => {
@@ -30,7 +40,7 @@ function main () {
         password: currentInput.querySelector('#password').value
       }
 
-      const existingUser = existingUserValidator(dataUserLogin.password)
+      const existingUser = existingUserValidator(dataUserLogin.password, dataUserLogin.userName)
       
 
       if (!existingUser) return alert('usuario o contraseña incorrecta')
@@ -40,11 +50,11 @@ function main () {
     })
   }
 
-  const existingUserValidator = (userPassword) => {
+  const existingUserValidator = (userPassword, nameUser) => {
     const userDate = localStorage.getItem('users')
     const parserUser = JSON.parse(userDate)
   
-    return parserUser.passwordUser === userPassword
+    return parserUser.password === userPassword || parserUser.email === nameUser
   }
   
 }
