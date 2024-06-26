@@ -1,0 +1,83 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+table {
+  width: calc(100% - 4rem);
+  margin: 0 auto;
+  border-collapse: collapse;
+  border: .1rem solid white;
+  padding: 1rem;
+}
+
+.table-patient__body {
+  display: grid;
+  grid-template-areas: 
+    "main main main main"
+    "haed head head head"
+    "rowHead rowAnswer rowHeadUrg rowAnswerUrg"
+    "rowBody rowAnswer rowHeadUrg rowAnswerUrg"
+  ;
+}
+
+.table-patient__row {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  height: 100%;
+  text-align: start;
+  border-left: .05rem solid white;
+  border-right: .05rem solid white;
+}
+
+.table-patient__row.main {
+  grid-area: main;
+  grid-column: 1 / 5;
+  padding: 0;
+  text-align: center;
+}
+
+.table-patient__row.head {
+  grid-area: head;
+  grid-column: 1 / 5;
+  padding: 0;
+}
+
+.table-patient__row.rowHead {
+  grid-area: rowHead;
+}
+
+.table-patient__row.rowAnswer {
+  grid-area: rowAnswer;
+  border-right: .05rem solid white;
+
+}
+
+.table-patient__row.rowHeadUrg {
+  grid-area: rowHeadUrg;
+}
+
+.table-patient__row.rowAnswerUrg {
+  grid-area: rowAnswerUrg;
+}
+
+
+.table-patient__row td,
+.table-patient__row th {
+  height: 100%;
+  width: 100%;
+  padding: .1rem 0rem;
+  padding-left: .7rem;
+  font-size: 1.4rem;
+  text-align: start;
+  text-wrap: wrap; 
+  border-top: .05rem solid white;
+  border-bottom: .05rem solid white;
+}

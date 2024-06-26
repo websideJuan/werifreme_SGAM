@@ -1,0 +1,98 @@
+.dashboard__navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.dasboard__content {
+  transform: translate(-100%);
+  position: fixed;
+  width: 100%;
+  height: 100dvh;
+  opacity: 0;
+  background-color: rgba(0 0 0 / .1);
+  transition: opacity .2s ease;
+  overflow: hidden;
+}
+
+.dasboard__content.show {
+  opacity: 1;
+}
+
+.dashboard__container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  width: 70vw;
+  transform: translate(-100%);
+  transition: transform .2s ease 600ms;
+}
+
+.dashboard__nav {
+  list-style: none;
+}
+
+.dashboard__items {
+  padding: 2rem 3rem;
+  background-color: #1db6ef;
+}
+
+.dasboard__link {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: white;
+}
+
+.dashboard__logout {
+  margin-top: auto;
+  list-style: none;
+
+}
+
+.dashboard__logout li {
+  background-color: #1db6ef;
+  padding: 2rem 3rem;
+  font-size: 1.6rem;
+
+}
+
+.dashboard__subNavbar {
+  display: flex;
+  justify-content: end;
+  padding: 1rem 2rem;
+}
+
+.btn-nav {
+  position: relative;
+  z-index: 999;
+  width: 40px;
+  height: 40px;
+  background: transparent !important;
+}
+
+.popup {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0 0 0 / .4);
+}
+
+.popup-content {
+  width: calc(100% - 3rem);
+  padding: 1.8rem;
+  height: 30vh;
+}
+
+.popup-title {
+  font-size: 1.9rem;
+}
+
+.popup-text {
+  font-size: 1.6rem;
+}

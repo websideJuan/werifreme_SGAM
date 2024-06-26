@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ingrso de paciente</title>
+  <link rel="stylesheet" href="../../../main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./pacientes.css">
+</head>
+<body>
+  <nav class="dashboard__navbar">
+    <div class="dasboard__content">
+      <div class="dashboard__container">
+        <ul class="dashboard__nav">
+          <li class="dashboard__items">
+            <a class="dasboard__link" href="#">
+              Ficha del paciente
+            </a>
+          </li>
+          <li class="dashboard__items">
+            <a class="dasboard__link" href="#">
+              Medicos tratantes
+            </a>
+          </li>
+          <li class="dashboard__items">
+            <a class="dasboard__link" href="#">
+              Recetas asociadas
+            </a>
+          </li>
+        </ul>
+        <ul class="dashboard__logout">
+          <li href="#">
+            Log out
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="dashboard__subNavbar">
+
+      <button class="btn btn-nav">
+        <i class="fa-solid fa-bars fa-lg"></i>
+      </button>
+    </div>
+  </nav>
+  <main class="main">
+    <section class="main__content">
+      <h1 style="font-size: 4.5rem; text-align: center;">SGAM</h1>
+      <form class="form glass-effect" id="patients-form">
+        <div class="form-group
+        ">
+          <label for="username" class="form-label">Nombre del paciente:</label>
+          <input
+            type="text"
+            name="nameUser"
+            id="username"
+            class="form-control"
+            placeholder="Juan"
+            >
+        </div>
+        <div class="form-group">
+          <label for="userlastname" class="form-label">Apellido:</label>
+          <input type="text" name="userlastname" id="userlastname" class="form-control" placeholder="Herrera">
+        </div>
+        <div class="form-group">
+          <label for="RUT" class="form-label">RUT:</label>
+          <input
+            type="RUT"
+            name="rutUser"
+            id="RUT"
+            class="form-control"
+            autocomplete="on"
+            placeholder="12345678-9"
+            >
+        </div>
+        <div class="form-group">
+          <label for="phone" class="form-label">Telefono:</label>
+          <input
+            type="phone"
+            name="phoneUser"
+            id="phone"
+            class="form-control"
+            autocomplete="on"
+            placeholder="12345678"
+            >
+        </div>
+        <div class="form-group">
+          <label for="address" class="form-label">Direccion:</label>
+          <input
+            type="address"
+            name="addressUser"
+            id="address"
+            class="form-control"
+            autocomplete="on"
+            placeholder="Calle falsa 123"
+            >
+        </div>
+        <div class="form-group">
+          <label for="birth" class="form-label">Fecha de nacimiento:</label>
+          <input
+            type="birth"
+            name="birthUser"
+            id="birth"
+            class="form-control"
+            autocomplete="on"
+            placeholder="01/01/2000"
+            >
+        </div>
+
+        <button type="submit" class="btn btn--login btn-adapter" id="btnSubmit" style="margin: 2rem 0;">
+          Ingresar paciente
+        </button>
+      </form>
+    </section>
+  </main>
+
+
+  <script src="./pacientes.js"></script>
+  <script src="../../js/fun.navbar.js"></script>
+</body>
+</html>

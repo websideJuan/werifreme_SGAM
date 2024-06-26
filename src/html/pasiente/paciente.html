@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ficha del paciente</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../../../main.css">
+  <link rel="stylesheet" href="./paciente.css">
+</head>
+<body>
+  <nav class="dashboard__navbar">
+    <div class="dasboard__content">
+      <div class="dashboard__container">
+        <ul class="dashboard__nav">
+          <li class="dashboard__items">
+            <a class="dasboard__link" href="#">
+              Ficha del paciente
+            </a>
+          </li>
+          <li class="dashboard__items">
+            <a class="dasboard__link" href="#">
+              Medicos tratantes
+            </a>
+          </li>
+          <li class="dashboard__items">
+            <a class="dasboard__link" href="#">
+              Recetas asociadas
+            </a>
+          </li>
+        </ul>
+        <ul class="dashboard__logout">
+          <li href="#">
+            Log out
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="dashboard__subNavbar">
+
+      <button class="btn btn-nav">
+        <i class="fa-solid fa-bars fa-lg"></i>
+      </button>
+    </div>
+  </nav>
+  <main class="main">
+    <table class="table" id="table-patient"></table>
+    
+
+  </main>
+
+
+  <script src="./paciente.js"></script>
+  <script src="../../js/fun.navbar.js"></script>
+</body>
+</html>

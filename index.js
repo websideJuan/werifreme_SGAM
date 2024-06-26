@@ -54,7 +54,7 @@ function main () {
     const userDate = localStorage.getItem('users')
     const parserUser = JSON.parse(userDate)
   
-    return parserUser.password === userPassword || parserUser.email === nameUser
+    return parserUser.password === userPassword && parserUser.email === nameUser
   }
   
 }
