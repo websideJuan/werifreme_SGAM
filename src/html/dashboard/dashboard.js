@@ -105,7 +105,7 @@ const main = () => {
         <h1 class="popup-title">
           Observaciones
         </h1>
-        <p>
+        <p class="popup-text">
           -Paciente presenta dolor de cabeza, se recomienda tratamiento para el dolor de cabeza.  
         </p>
 
